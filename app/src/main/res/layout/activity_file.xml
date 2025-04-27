@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📂 Manage Your Documents"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Guide Message -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload a file to store it securely, or tap a file to read it."
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload File"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:padding="14dp"
+        android:elevation="6dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp" />
+
+    <ListView
+        android:id="@+id/lvFiles"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        android:background="@drawable/listview_background"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="File content will appear here"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:padding="16dp"
+        android:background="@drawable/textview_background"
+        android:elevation="3dp" />
+</LinearLayout>
